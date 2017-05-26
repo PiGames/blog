@@ -17,5 +17,12 @@
 
     {% include footer.html %}
 
+    <script type="text/javascript">
+      const code = document.querySelectorAll( "pre code" );
+      code.forEach( ( singleCode ) => {
+        singleCode.classList.add( "line-numbers" );
+      } );
+    </script>
+    <script src="{{ "/assets/prism.js" | relative_url }}" charset="utf-8"></script>
   </body>
 </html>

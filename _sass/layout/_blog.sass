@@ -1,0 +1,24 @@
+.blog-post
+  h2
+    margin: .25em 0
+
+  small
+    color: $text-muted
+    font-size: 14px
+
+  small, h2
+    display: block
+
+  small > *
+    &::after
+      content: " / "
+
+    &:last-child::after
+      content: ""
+
+.blog-full
+  h1
+    margin-bottom: 0
+
+  small
+    margin-bottom: 16px

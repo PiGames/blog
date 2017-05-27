@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "MathRobot #1: About MathRobot and setting up RaspberryPi"
+date:   2017-05-27 18:38:32 +0200
+author: pietrzakacper
+categories: IoT
+---
+Many fellow programmers say that Internet Of Things is fun. We decided to try that ourselves.
+Two IoT newbies are going to build a working robot that does more than blinking LED.
+
+## What is MathRobot?
+MathRobot is PiGames' first IoT project. It's made with intent to learn IoT and have fun.
+When we first thought of making an IoT project we decided to make something really simple.
+As much as simple this project is, as much useless it is. The idea is to make a robot that will operate calculator remotely. We imagine that the user will be able to type in terminal something like: `2+2`, then our robot will actually type it (with a robotic arm) on physical calculator, then it will press `=`. After that it will make a photo of calculator's display and read the outcome from the image. Then it just responds to the user with an output: `4`.
+
+## What technologies are we using?
+The whole brain of our robot will be set up on RaspberryPi. The server that will run on RPi will be written in JavaScript. Robotic arm will be steered by Arduino and the code that will handle this steering will be JS or C, we don't know yet what advantages might come with using C. The reason why we chose Arduino to steer robotic arm is that it handles communication with servomotors much better than RPi. Another thing we don't know yet is the way in which we are going to plug Arduino to RPi. It might be a middleware server or just a wired connection.
+So summing up with details, we are going to build a robot with these technologies:
+- RaspberryPi B programmed in JavaScript and NodeJS
+- Arduino Uno programmed in JavaScript or C
+- 3 servomotors that will take care of robotic arm's movement
+
+## Setting up RaspberryPi
+When you buy a brand new RPi it comes with literally nothing. There are a few things that you have to take care of, to make RPi usable. First of all you have to install operating system. We decided to install Raspbian but you can install any OS you want. To install Raspbian just:
+- Prepare empty SD card
+- Download Raspbian from this site (url)
+- Flash Raspbian on SD card using (this program)
+- Plug RPi to a display using HDMI port
+- Insert SD card into RPi and plug RPi to power source
+- RPi should boot with Raspbian installed!
+
+Having OS installed you can start taking care of things like plugging keyboard and mouse or connecting to your WiFi network. But basically you can skip all those things, you can even get rid off display. All you need is an internet connection and RPi's IP adress. Then you can just use RPi remotely through SSH from any other computer.
+
+## Summing up
+It looks like it's gonna be an interesting project. We are pretty psyched about all those new things that we are going to learn. Hope you like MathRobot too! I invite you to the comments section and if you have any idea for the better name for this project, just please share with us :)

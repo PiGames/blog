@@ -8,13 +8,15 @@ categories: IoT
 Many fellow programmers say that Internet Of Things is fun. We decided to try that ourselves.
 Two IoT newbies are going to build a working robot that does more than blinking LED.
 
+![](http://unsplash.it/1920/1080)
+
 ## What is MathRobot?
 MathRobot is PiGames' first IoT project. It's made with intent to learn IoT and have fun.
 When we first thought of making an IoT project we decided to make something really simple.
 As much as simple this project is, as much useless it is. The idea is to make a robot that will operate calculator remotely. We imagine that the user will be able to type in terminal something like: `2+2`, then our robot will actually type it (with a robotic arm) on physical calculator, then it will press `=`. After that it will make a photo of calculator's display and read the outcome from the image. Then it just responds to the user with an output: `4`.
 
 ## What technologies are we using?
-The whole brain of our robot will be set up on RaspberryPi. The server that will run on RPi will be written in JavaScript. Robotic arm will be steered by Arduino and the code that will handle this steering will be JS or C, we don't know yet what advantages might come with using C. The reason why we chose Arduino to steer robotic arm is that it handles communication with servomotors much better than RPi. Another thing we don't know yet is the way in which we are going to plug Arduino to RPi. It might be a middleware server or just a wired connection.
+The whole brain of our robot will be set up on RaspberryPi. The server that will run on RPi will be written in JavaScript. Robotic arm will be steered by Arduino and the code that will handle this steering will be JS or C, we don't know yet what advantages might come with using C. The reason why we chose Arduino to steer robotic arm is that it handles communication with servomotors much better than RPi.
 So summing up with details, we are going to build a robot with these technologies:
 - RaspberryPi B programmed in JavaScript and NodeJS
 - Arduino Uno programmed in JavaScript or C
@@ -23,8 +25,8 @@ So summing up with details, we are going to build a robot with these technologie
 ## Setting up RaspberryPi
 When you buy a brand new RPi it comes with literally nothing. There are a few things that you have to take care of, to make RPi usable. First of all you have to install operating system. We decided to install Raspbian but you can install any OS you want. To install Raspbian just:
 - Prepare empty SD card
-- Download Raspbian from this site (url)
-- Flash Raspbian on SD card using (this program)
+- Download Raspbian from this site (<https://www.raspberrypi.org/downloads/raspbian/>{:target="_blank"})
+- Flash Raspbian on SD card using (<https://etcher.io/>{:target="_blank"})
 - Plug RPi to a display using HDMI port
 - Insert SD card into RPi and plug RPi to power source
 - RPi should boot with Raspbian installed!

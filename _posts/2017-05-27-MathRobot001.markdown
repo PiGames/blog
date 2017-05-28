@@ -8,7 +8,7 @@ categories: IoT
 Many fellow programmers say that Internet Of Things is fun. We decided to try that ourselves.
 Two IoT newbies are going to build a working robot that does more than blinking LED.
 
-![](http://unsplash.it/1920/1080)
+<!-- ![](http://unsplash.it/1920/1080) -->
 
 ## What is MathRobot?
 MathRobot is PiGames' first IoT project. It's made with intent to learn IoT and have fun.

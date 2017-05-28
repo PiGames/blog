@@ -25,6 +25,7 @@ date_format: "%d %B %Y"
 date_format_datetime: "%Y-%m-%dT%T%z"
 disqus:
   shortname: "blog-pigam-es"
+google_analytics: "UA-100013183-1"
 
 post_desc_p: 1
 

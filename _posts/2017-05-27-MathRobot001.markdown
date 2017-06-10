@@ -8,8 +8,6 @@ categories: IoT
 Many fellow programmers say that Internet Of Things is fun. We decided to try that ourselves.
 Two IoT newbies are going to build a working robot that does more than blinking LED.
 
-<!-- ![](http://unsplash.it/1920/1080) -->
-
 ## What is MathRobot?
 MathRobot is PiGames' first IoT project. It's made with intent to learn IoT and have fun.
 When we first thought of making an IoT project we decided to make something really simple.
@@ -25,8 +23,8 @@ So summing up with details, we are going to build a robot with these technologie
 ## Setting up RaspberryPi
 When you buy a brand new RPi it comes with literally nothing. There are a few things that you have to take care of, to make RPi usable. First of all you have to install operating system. We decided to install Raspbian but you can install any OS you want. To install Raspbian just:
 - Prepare empty SD card
-- Download Raspbian from this site (<https://www.raspberrypi.org/downloads/raspbian/>{:target="_blank"})
-- Flash Raspbian on SD card using (<https://etcher.io/>{:target="_blank"})
+- Download Raspbian from this site (<https://www.raspberrypi.org/downloads/raspbian/>)
+- Flash Raspbian on SD card using (<https://etcher.io/>)
 - Plug RPi to a display using HDMI port
 - Insert SD card into RPi and plug RPi to power source
 - RPi should boot with Raspbian installed!

@@ -59,10 +59,5 @@ As it is pretty much a IT blog first thing I thought about was Emojis! Who doesn
 
 Something else? Obviously code highlighting. I have used [Prism](http://prismjs.com/). It offers a lot of languages, themes (we are using atom's One Dark or something that kinda looks like it) as well as some plugins.
 
-## Have you added any additional features?
-As it is pretty much a IT blog first thing I thought about was Emojis! Who doesn't like emojis? For sure people that spend most of their time in the internet. So an easy solution to this was [jemoji](https://github.com/jekyll/jemoji). After installing it you simply use it as you would for example on Slack – `:wink:` will show up as :wink: (unfortunately i couldn't find a way to add skin color eg. for :+1:).
-
-Something else? Obviously code highlighting. I have used [Prism](http://prismjs.com/). It offers a lot of languages, themes (we are using atom's One Dark or something that kinda looks like it) as well as some plugins.
-
 ## TL;DR
 Jekyll is an awesome tool to quickly create static customisable blogs using markdown with a lot of potential and features. (And can have emojis!)

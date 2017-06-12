@@ -9,7 +9,7 @@ categories: "General"
 Hey everyone! I'm glad you are here. After quite some time I finally made myself to write something. Today I would like to show you how I have created this blog in just a few hours (2/3 to be precise).
 
 ## What powers this blog?
-Some time ago I've heard about [Jekyll](https://jekyllrb.com) – blog-aware, static site generator powered by Ruby. I decided to use it because we aren't rich yet (Yet! :wink:) and we can't afford web hosing so we are using GitHub's Pages that are really easy to setup with Jekyll. All you have to do is make a commit! You don't have to use any sophisticated way to commit only build folder as GitHub does it all for us (I believe it builds Jekyll on its own).
+Some time ago I've heard about [Jekyll](https://jekyllrb.com) – blog-aware, static site generator powered by Ruby. I decided to use it because we aren't rich yet (Yet! :wink:) and we can't afford web hosting so we are using GitHub's Pages that are really easy to setup with Jekyll. All you have to do is make a commit! You don't have to use any sophisticated way to commit only build folder as GitHub does it all for us (I believe it builds Jekyll on its own).
 
 ## So is it any good?
 Definitely! Especially for a front-end dev that doesn't really enjoy PHP. Creating this page involved almost no coding (actually CSS only but I had already written in while creating <http://pigam.es>) as you pretty much only use HTML and [Liquid](https://github.com/Shopify/liquid/wiki) (template engine). Apart from this Jekyll has built in SASS compiler and creates a local server after typing `jekyll serve` into the console.

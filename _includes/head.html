@@ -1,3 +1,9 @@
+{% assign absolute_image = page.image %}
+{% if page.image contains '://' %}
+{% else %}
+  {% assign absolute_image = site.url | append: page.image %}
+{% endif %}
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,8 +37,6 @@
     {% if page.modified %}
       <meta property="article:modified_time" content="{{page.modified}}" />
     {% endif %}
-    <!-- <meta property="article:author" content="http://facebook.com/aramzs" /> -->
-    <!-- <meta property="article:publisher" content="https://www.facebook.com/aramzs" /> -->
     <meta property="article:section" content="{{page.vertical}}" />
     {% for tag in page.categories %}
       <meta property="article:tag" content="{{tag}}" />
@@ -44,13 +48,13 @@
     {% if page.imagenull %}
       <!-- no og image -->
     {% elsif page.image %}
-      <meta property="og:image" content="{{page.image | absolute_url}}" />
-        <meta name="twitter:image" content="{{page.image | absolute_url}}" />
+      <meta property="og:image" content="{{absolute_image}}" />
+        <meta name="twitter:image" content="{{absolute_image}}" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
       {% elsif page.image %}
-        <meta property="og:image" content="{{page.image | absolute_url}}" />
-        <meta name="twitter:image" content="{{page.image | absolute_url}}" />
+        <meta property="og:image" content="{{absolute_image}}" />
+        <meta name="twitter:image" content="{{absolute_image}}" />
       {% else %}
         <meta property="og:image" content="{{ "/assets/image/logo.png" | absolute_url }}" />
         <meta name="twitter:image" content="{{ "/assets/image/logo.png" | absolute_url }}" />

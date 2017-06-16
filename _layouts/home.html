@@ -6,11 +6,11 @@ layout: default
 {{ content }}
 
 <div class="post-list" itemscope itemtype="https://schema.org/Blog">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="blog-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
-      <div class="header-image">
+      <a class="header-image" href="{{ post.url | relative_url }}">
         <div style="background-image: url('{{post.image}}')"></div>
-      </div>
+      </a>
       <div class="header-content">
         <header>
           <small>
@@ -28,7 +28,6 @@ layout: default
         </header>
         <main>
           {% assign paragraphs = post.content | split: "</p>" %}
-
             {% if post.description %}
               {{ post.description }}
             {% else %}
@@ -42,4 +41,32 @@ layout: default
       </div>
     </article>
   {% endfor %}
+
+  {% if paginator.total_posts > paginator.per_page %}
+    <p class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-angle-left"></i> Previous</a>
+      {% else %}
+        <span class="previous"><i class="fa fa-angle-left"></i> Previous</span>
+      {% endif %}
+
+      {% for i in (1..paginator.total_pages) %}
+        {% if i != paginator.page %}
+          {% if i == 1 %}
+            <a href="/">{{ i }}</a>
+          {% else %}
+            <a href="/page{{ i }}">{{ i }}</a>
+          {% endif %}
+        {% else %}
+          <strong>{{ i }}</strong>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next <i class="fa fa-angle-right"></i></a>
+      {% else %}
+        <span class="next">Next <i class="fa fa-angle-right"></i></span>
+      {% endif %}
+    </p>
+  {% endif %}
 </div>

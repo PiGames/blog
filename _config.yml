@@ -32,6 +32,8 @@ post_desc_p: 1
 # Build settings
 markdown: kramdown
 
+paginate: 5
+
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -40,6 +42,7 @@ kramdown:
 gems:
   - jekyll-feed
   - jemoji
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock

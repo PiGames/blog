@@ -4,7 +4,7 @@ title: "How does the blog work?"
 date: "2017-06-11 21:22"
 author: "bibixx"
 categories: "General"
-image: "/assets/img/jekyll.png"
+image: "/assets/articles/jekyll.png"
 ---
 
 Hey everyone! I'm glad you are here. After quite some time I finally made myself to write something. Today I would like to show you how I have created this blog in just a few hours (2/3 to be precise).

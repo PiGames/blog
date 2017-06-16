@@ -4,6 +4,7 @@ title:  "MathRobot #1: About MathRobot and setting up RaspberryPi"
 date:   2017-05-27 18:38:32 +0200
 author: pietrzakacper
 categories: IoT
+image: "/assets/articles/mathrobot1.jpg"
 ---
 Many fellow programmers say that Internet Of Things is fun. We decided to try that ourselves.
 Two IoT newbies are going to build a working robot that does more than blinking LED.

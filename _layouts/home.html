@@ -8,7 +8,7 @@ layout: default
 <div class="post-list" itemscope itemtype="https://schema.org/Blog">
   {% for post in paginator.posts %}
     <article class="blog-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
-      <a class="header-image" href="{{ post.url | relative_url }}">
+      <a class="header-image" href="{{ post.url | absolute_url }}">
         <div style="background-image: url('{{post.image}}')"></div>
       </a>
       <div class="header-content">

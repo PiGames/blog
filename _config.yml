@@ -16,8 +16,8 @@
 title: PiGames Blog
 email: pigames.team@gmail.com
 description: Learn about all the cool stuff that PiGames crew do! We love making HTML5 games, desktop games and robots. We write our code mainly in JavaScript, C++ and C#.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pigames.github.io/blog" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://pigames.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pigames
 github_username:  pigames
 
